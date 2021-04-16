@@ -42,8 +42,8 @@ variable "ssh_password" {
 locals {
   # Common tags to be assigned to all resources
   common_tags = {
-    owner = "patrick carey"
-    email = "pcarey@hashicorp.com"
+    owner = "patrick"
+    email = "pcarey"
     se-region = "australiaeast"
     purpose = "azure testing"
     ttl = "8"
