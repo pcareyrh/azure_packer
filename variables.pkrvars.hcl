@@ -1,0 +1,6 @@
+resource_group_name = "pcarey-resources"
+storage_account = "pcareystorage"
+location = "australiaeast"
+vm_size = "Standard_A2"
+ssh_username = "centos"
+ssh_password = "standard_a2"

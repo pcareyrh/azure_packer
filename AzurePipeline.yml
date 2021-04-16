@@ -1,0 +1,16 @@
+jobs:
+- job: Job_1
+  displayName: Build Images.
+  pool:
+    vmImage: ubuntu-20.04
+  steps:
+  - checkout: self
+  - task: PackerTool@0
+    displayName: 'Install Packer '
+  - task: Packer@1
+    displayName: Packer build
+    inputs:
+      connectedServiceAzure: 65967367-5153-4a51-bd9f-eee641c966c7
+      templatePath: azure_vm.pkr.hcl
+      variables-file: variables.pkrvars.hcl
+...

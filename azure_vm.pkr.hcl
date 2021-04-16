@@ -1,3 +1,44 @@
+variable "client_id" {
+  type = string
+  #default = "${env("CLIENT_ID")}"
+}
+
+variable "client_secret" {
+  type = string
+}
+
+variable "resource_group_name" {
+  type = string
+}
+
+variable "storage_account" {
+  type = string
+}
+
+variable "subscription_id" {
+  type = string
+}
+
+variable "tenant_id" {
+  type = string
+}
+
+variable "location" {
+  type = string
+}
+
+variable "vm_size" {
+  type = string
+}
+
+variable "ssh_username" {
+  type = string
+}
+
+variable "ssh_password" {
+  type = string
+}
+
 locals {
   # Common tags to be assigned to all resources
   common_tags = {
